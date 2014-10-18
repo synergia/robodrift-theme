@@ -9,7 +9,7 @@
         <h1><?php bloginfo( 'name' ); ?></h1>
     </header>
     <footer>
-        <a href="#first" class="next">
+        <a href="#first" class="no-border-bottom">
             <i class="fa fa-4x fa-angle-down"></i>
         </a>
     </footer>
