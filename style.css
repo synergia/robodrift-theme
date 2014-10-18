@@ -684,11 +684,7 @@ input[type="reset"].alt:hover,
             font-size: 5.25em;
 
 }
-@media (max-width: 736px) {
-    #header header h1 {
-        font-size: 2.25em;
-    }
-}
+
 #header header p {
     margin-top: 0.75em;
     font-weight: 200;
@@ -788,4 +784,12 @@ input[type="reset"].alt:hover,
 }
 .no-border-bottom {
     border-bottom: 0px solid transparent;
+}
+@media (max-width: 736px) {
+    #header header h1 {
+        font-size: 2.25em;
+    }
+    #footer .copyright {
+        font-size: 2em;
+    }
 }
