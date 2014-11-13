@@ -3,7 +3,7 @@ Theme Name: RoboDrift
 Author: stsdc
 Author URI: http://vk.com.stsdc/
 Description: Motyw specjalnie przygotowany dla RoboDrift.
-Version: 0.2
+Version: 0.3
 Text Domain: robodrift
 RoboDrift WordPress Theme, Copyright 2014 stsdc.
 */
@@ -710,7 +710,8 @@ input[type="reset"].alt:hover,
     padding: 5em 0 5em 0;
     margin: 0;
 }
-.main > header h2 {
+.main > header h2,
+.sponsorowane{
     font-size: 2.25em;
     font-weight: 100;
     margin-bottom: 0;
@@ -792,4 +793,31 @@ input[type="reset"].alt:hover,
     #footer .copyright {
         font-size: 2em;
     }
+}
+.sponsorowane {
+    padding-bottom: 1em;
+}
+#sponsorowane {
+    background-color: white;
+}
+.sponsorowane-container {
+    padding: 1em 0;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    background-color: white;
+}
+.wspolpraca {
+    position: relative;
+    overflow: hidden;
+    padding: 1em;
+    display: inline-block;
+}
+.wspolpraca img {
+    max-height: 100px;
+    width: auto;
+}
+.single-link {
+    text-decoration: none;
+    border-bottom: 0;
 }

@@ -47,11 +47,17 @@ fair play. Dla zwycięzców przewidziane są nagrody.
                                     <?php endwhile; ?>
 								</section>
 							</div>
+                            <div class="clear"></div>
 						</div>
+                        <div class="row">
+                            <div class="12u"><?php echo do_shortcode('[vsgmap address="strefa kultury studenckiej, Wrocław" width="100%"]'); ?></div></div>
+
 						<div class="row">
 							<div class="12u">
 								<footer>
-									<a href="#second" class="button scrolly">Gravida tempor lacinia</a>
+									        <a href="#second" class="no-border-bottom">
+                                                <i class="fa fa-4x fa-angle-down"></i>
+                                            </a>
 								</footer>
 							</div>
 						</div>

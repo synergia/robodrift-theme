@@ -8,6 +8,10 @@
 
 <?php get_template_part('template-part', 'second'); ?>
 
+<?php get_template_part('template-part', 'rejestracja'); ?>
+
+<?php get_template_part('template-part', 'sponsorowane'); ?>
+
 
 <!-- end content container -->
 
