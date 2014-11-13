@@ -11,7 +11,6 @@
 				</header>
 				<div class="content dark style3">
 					<div class="container">
-						<span class="image featured"><img src="images/pic07.jpg" alt="" /></span>
 						<div class="row">
 							<div class="6u">
 						<?php $recent=new WP_Query( "category_name=pojazd1");

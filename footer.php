@@ -8,5 +8,16 @@
 				</div>
 			</section>
 <?php wp_footer(); ?>
+ <script>
+jQuery(document).ready(function () {
+
+jQuery('#demo').click(function (e) {
+e.preventDefault();
+jQuery('#modal-content').popUpWindow({
+size: "large" // large, medium or large
+});
+});
+
+});</script>
 </body>
 </html>

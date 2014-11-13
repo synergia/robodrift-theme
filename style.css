@@ -821,3 +821,14 @@ input[type="reset"].alt:hover,
     text-decoration: none;
     border-bottom: 0;
 }
+
+
+/********* CLEARFIX *********/
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+.cf:after {
+    clear:both;
+}
