@@ -24,6 +24,7 @@
     }
   ?>
 </div>
+<!--
 <div class="container sponsorowane-container">
 <h2 class="sponsorowane">Sponsorzy</h2>
 <?php
@@ -49,4 +50,5 @@
     }
   ?>
 </div>
+-->
 </section>

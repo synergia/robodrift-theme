@@ -1,3 +1,5 @@
+<?php global $dm_settings; ?>
+
 <!-- First -->
 			<section id="first" class="main">
 				<header>
