@@ -584,7 +584,7 @@ input[type="reset"].alt:hover,
     display: inline-block;
     position: relative;
     padding-bottom: 5em;
-    margin-bottom: 2.75em;
+    margin-bottom: 0.75em;
     cursor: default;
 }
 .feature-icon .icon {
@@ -792,6 +792,11 @@ input[type="reset"].alt:hover,
     }
     #footer .copyright {
         font-size: 2em;
+    }
+}
+@media (max-width: 1000px) {
+    section:last-child {
+        margin-bottom: 2em;
     }
 }
 .sponsorowane {
