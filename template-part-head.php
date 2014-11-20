@@ -3,6 +3,8 @@
 <section id="header" class="dark">
     <div class="impreza-na-fb">
         <a href="<?php echo $dm_settings['fb'] ?>" class="icon fa-facebook"><span class="label">Facebook</span></a>
+        <a href="#kontakt" class="icon fa-envelope-o"><span class="label">Kontakt</span></a>
+
     </div>
 
     <header>

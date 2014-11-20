@@ -12,6 +12,7 @@
 
 <?php get_template_part('template-part', 'sponsorowane'); ?>
 
+<?php get_template_part('template-part', 'kontakt'); ?>
 
 <!-- end content container -->
 
