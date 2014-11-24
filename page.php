@@ -14,6 +14,4 @@
 
 <?php get_template_part('template-part', 'kontakt'); ?>
 
-<!-- end content container -->
-
 <?php get_footer(); ?>

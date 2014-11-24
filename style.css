@@ -681,10 +681,8 @@ input[type="reset"].alt:hover,
     margin-bottom: 0;
     font-weight: 800;
     text-transform: uppercase;
-            font-size: 5.25em;
-
+    font-size: 5.25em;
 }
-
 #header header p {
     margin-top: 0.75em;
     font-weight: 200;
@@ -711,7 +709,7 @@ input[type="reset"].alt:hover,
     margin: 0;
 }
 .main > header h2,
-.sponsorowane{
+.sponsorowane {
     font-size: 2.25em;
     font-weight: 100;
     margin-bottom: 0;
@@ -826,14 +824,21 @@ input[type="reset"].alt:hover,
     text-decoration: none;
     border-bottom: 0;
 }
-
-
 /********* CLEARFIX *********/
+
 .cf:before,
 .cf:after {
-    content:"";
-    display:table;
+    content: "";
+    display: table;
 }
 .cf:after {
-    clear:both;
+    clear: both;
+}
+/******* REJESTRACJA ********/
+
+.ninja-forms-cont {
+    padding: 0 20px 0 20px;
+}
+form input[type="text"].ninja-forms-field {
+    padding: 0.4em 0.4em;
 }
