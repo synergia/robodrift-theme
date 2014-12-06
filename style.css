@@ -709,6 +709,7 @@ input[type="reset"].alt:hover,
     margin: 0;
 }
 .main > header h2,
+.industry h2,
 .sponsorowane {
     font-size: 2.25em;
     font-weight: 100;
@@ -843,12 +844,32 @@ input[type="reset"].alt:hover,
 }
 form input[type="text"].ninja-forms-field {
     padding: 0.4em 0.4em;
-        border: #c0c0c0 1px solid;
+    border: #c0c0c0 1px solid;
 }
 .ninja-forms-field-error {
     color: red;
     font-weight: bold;
 }
-.ninja-forms-field, .ninja-forms-req{
+.ninja-forms-field,
+.ninja-forms-req {
     border: #c0c0c0 1px solid;
+}
+/****** PRZEMYSŁ *******/
+
+.industry {
+    background-color: #F8F8F8;
+    border-top: 1px solid #E6E6E6;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    border-bottom: 1px solid #E6E6E6;
+}
+.industry img {
+    margin-bottom: 2em;
+    height: 250px;
+    width: auto;
+
+}
+.industry h2 {
+    text-align: center;
+    margin-bottom: 1em;
 }

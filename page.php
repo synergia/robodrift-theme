@@ -10,7 +10,9 @@
 
 <?php get_template_part('template-part', 'rejestracja'); ?>
 
-<?php get_template_part('template-part', 'sponsorowane'); ?>
+<?php get_template_part('template-part', 'industry'); ?>
+
+<?php get_template_part('template-part', 'sponsors'); ?>
 
 <?php get_template_part('template-part', 'kontakt'); ?>
 
