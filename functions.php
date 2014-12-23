@@ -7,7 +7,7 @@
     $themename = "RoboDrift";
     $developer_uri = "http://vk.com/stsdc";
     $shortname = "rd";
-    $version = '0.2';
+    $version = '0.6.2';
 
 ////////////////////////////////////////////////////////////////////
 // include Theme-options.php for Admin Theme settings
