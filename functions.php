@@ -53,11 +53,13 @@ function devdmbootstrap3_theme_scripts() {
     /*   REGISTER ALL JS FOR SITE */
     wp_register_script('scrolly',get_stylesheet_directory_uri().'/js/jquery.scrolly.min.js', array('jquery'));
     wp_register_script('skel',get_stylesheet_directory_uri().'/js/skel.min.js');
+    wp_register_script('skrollr',get_stylesheet_directory_uri().'/js/skrollr.js', array('jquery'));
     wp_register_script('init',get_stylesheet_directory_uri().'/js/init.js');
     wp_register_script('popup',get_stylesheet_directory_uri().'/js/popupwindow.js');
 
     wp_enqueue_script('scrolly');
     wp_enqueue_script('skel');
+    wp_enqueue_script('skrollr');
     wp_enqueue_script('init');
     wp_enqueue_script('popup');
 

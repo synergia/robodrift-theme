@@ -1,18 +1,38 @@
 <?php global $dm_settings; ?>
 
-<section id="header" class="dark">
+
+
+
+<section id="header" class="dark" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#header">
+
     <div class="impreza-na-fb">
         <a href="<?php echo $dm_settings['fb'] ?>" class="icon fa-facebook"><span class="label">Facebook</span></a>
-        <a href="#kontakt" class="icon fa-envelope-o"><span class="label">Kontakt</span></a>
 
     </div>
+
 
     <header>
         <h1><?php bloginfo( 'name' ); ?></h1>
     </header>
     <footer>
-        <a href="#first" class="no-border-bottom">
-            <i class="fa fa-4x fa-angle-down"></i>
-        </a>
+        <ul id="nav">
+            <li><a href="/">Home</a>
+            </li>
+            <li><a href="/about/">About</a>
+            </li>
+            <li><a href="/work/">Work</a>
+            </li>
+            <li><a href="/clients/">Clients</a>
+            </li>
+            <li><a href="/contact/">Contact</a>
+            </li>
+        </ul>
     </footer>
 </section>
+
+    <script type="text/javascript">
+        ( function( $ ) {
+    // Init Skrollr
+    var s = skrollr.init();
+} )( jQuery );
+    </script>
