@@ -16,9 +16,9 @@
     </header>
     <footer>
         <ul id="nav">
-            <li><a href="/">Home</a>
+            <li><a href="#first">O Zawodach</a>
             </li>
-            <li><a href="/about/">About</a>
+            <li><a href="#second">Kategorie</a>
             </li>
             <li><a href="/work/">Work</a>
             </li>

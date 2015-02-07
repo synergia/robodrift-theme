@@ -4,12 +4,11 @@
 			<section id="first" class="main">
 				<header>
 					<div class="container">
-						<h2><?php bloginfo( 'description' ); ?></h2>
-						<p>Ideą zawodów jest propagowanie mechatroniki, robotyki, automatyki i innych
-pokrewnych dziedzin techniki poprzez zawody. Celem zawodów jest także umożliwienie zawodnikom sprawdzenia się w
-danej konkurencji, z utrzymaniem uczciwej rywalizacji oraz ducha zawodów i zasady
-fair play. Dla zwycięzców przewidziane są nagrody.
-</p>
+					<?php $recent=new WP_Query( "category_name=o-zawodach");
+                                          while($recent->have_posts()) : $recent->the_post();?>
+										<h2><?php the_title(); ?></h2>
+                                        <p><?php the_content(); ?></p>
+                                        <?php endwhile; ?>
 					</div>
 				</header>
 				<div class="content dark style1 featured" id="firstdet">

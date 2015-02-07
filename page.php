@@ -8,9 +8,7 @@
 
 <?php get_template_part('template-part', 'second'); ?>
 
-<?php get_template_part('template-part', 'rejestracja'); ?>
-
-<?php get_template_part('template-part', 'industry'); ?>
+<?php get_template_part('template-part', 'nagrody'); ?>
 
 <?php get_template_part('template-part', 'sponsors'); ?>
 
