@@ -834,16 +834,18 @@ nav {
     padding: 0;
     text-align: center;
     font-weight: 200;
-    -webkit-transition: background 1s ease-in;
-    -moz-transition: background 1s ease-in;
-    -ms-transition: background 1s ease-in;
-    -o-transition: background 1s ease-in;
-    transition: background 1s ease-in;
-        -webkit-transition: font-size 300ms linear;
-    -moz-transition: font-size 300ms linear;
-    -ms-transition: font-size 300ms linear;
-    -o-transition: font-size 300ms linear;
-    transition: font-size 300ms linear;
+    -webkit-transition: background 1s ease-in, font 300ms linear;
+    -moz-transition: background 1s ease-in, font 300ms linear;
+    -ms-transition: background 1s ease-in, font 300ms linear;
+    -o-transition: background 1s ease-in, font 300ms linear;
+    transition: background 1s ease-in, font 300ms linear;
+    /*
+    -webkit-transition: font 300ms linear;
+    -moz-transition: font 300ms linear;
+    -ms-transition: font 300ms linear;
+    -o-transition: font 300ms linear;
+    transition: font 300ms linear;
+*/
 }
 
 .sticky {
