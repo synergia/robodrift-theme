@@ -57,6 +57,7 @@ function devdmbootstrap3_theme_scripts() {
     wp_register_script('init',get_stylesheet_directory_uri().'/js/init.js');
     wp_register_script('popup',get_stylesheet_directory_uri().'/js/popupwindow.js');
     wp_register_script('readmore',get_stylesheet_directory_uri().'/js/readmore.min.js', array('jquery'));
+    wp_register_script('waypoints',get_stylesheet_directory_uri().'/js/jquery.waypoints.min.js', array('jquery'));
 
     wp_enqueue_script('readmore');
     wp_enqueue_script('scrolly');
@@ -64,7 +65,7 @@ function devdmbootstrap3_theme_scripts() {
     wp_enqueue_script('skrollr');
     wp_enqueue_script('init');
     wp_enqueue_script('popup');
-
+    wp_enqueue_script('waypoints');
 }
 add_action( 'wp_enqueue_scripts', 'devdmbootstrap3_theme_scripts' );
 

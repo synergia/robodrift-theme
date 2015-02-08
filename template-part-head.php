@@ -11,22 +11,28 @@
     </div>
 
 
-    <header>
+    <header data-center="bottom: 200px; opacity: 1"
+                data-top="bottom: 1200px; opacity: 0"
+                data-anchor-target="#header h1">
         <h1><?php bloginfo( 'name' ); ?></h1>
     </header>
     <footer>
-        <ul id="nav">
-            <li><a href="#first">O Zawodach</a>
-            </li>
-            <li><a href="#second">Kategorie</a>
-            </li>
-            <li><a href="/work/">Work</a>
-            </li>
-            <li><a href="/clients/">Clients</a>
-            </li>
-            <li><a href="/contact/">Contact</a>
-            </li>
-        </ul>
+        <div class="nav-container">
+        <nav class="nav-grad">
+            <ul>
+                <li><a href="#first">O Zawodach</a>
+                </li>
+                <li><a href="#second">Reguły</a>
+                </li>
+                <li><a href="#nagrody">Nagrody</a>
+                </li>
+                <li><a href="/rejestracja">Rejestraja</a>
+                </li>
+                <li><a href="#sponsorowane">Organizatorzy</a>
+                </li>
+            </ul>
+        </nav>
+        </div>
     </footer>
 </section>
 
