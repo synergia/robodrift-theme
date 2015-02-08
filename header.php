@@ -35,7 +35,6 @@
     <meta name="twitter:description" content="Pierwsze takie wyścigi robotów"/>
     <meta name="twitter:image:src" content="<?php echo get_template_directory_uri(); ?>/img/og.png"/>
     <meta name="twitter:domain" content="robo-drift.pwr.wroc.pl"/>
-
     <?php wp_head(); ?>
     <!--[if lte IE 8]>
     <link rel="stylesheet" href="<?php get_template_directory_uri(); ?>/css/ie/v8.css" />

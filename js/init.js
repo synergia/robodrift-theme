@@ -245,28 +245,61 @@
         });
     });
 
-    $(function () {
+    $(document).ready(function () {
+        //http://callmenick.com/2013/04/22/single-page-site-with-smooth-scrolling-highlighted-link-and-fixed-navigation/
+        /**
+         * This part does the "fixed navigation after scroll" functionality
+         * We use the jQuery function scroll() to recalculate our variables as the
+         * page is scrolled/
+         */
+        $(window).scroll(function () {
+            var window_top = $(window).scrollTop(); // the "12" should equal the margin-top value for nav.stick
+            var div_top = $('.nav-container').offset().top;
+            if (window_top > div_top) {
+                $('nav').addClass('sticky');
+            } else {
+                $('nav').removeClass('sticky');
+            }
+        });
+        /**
+         * This part handles the highlighting functionality.
+         * We use the scroll functionality again, some array creation and
+         * manipulation, class adding and class removing, and conditional testing
+         */
+        var aChildren = $("nav li").children(); // find the a children of the list items
+        var aArray = []; // create the empty aArray
+        for (var i = 0; i < aChildren.length; i++) {
+            var aChild = aChildren[i];
+            var ahref = $(aChild).attr('href');
+            aArray.push(ahref);
+        } // this for loop fills the aArray with attribute href values
 
-        // Do our DOM lookups beforehand
-        var nav_container = $(".nav-container");
-        var nav = $("nav");
+        $(window).scroll(function () {
+            var windowPos = $(window).scrollTop() + 2; // get the offset of the window from the top of page
+            var windowHeight = $(window).height(); // get the height of the window
+            var docHeight = $(document).height();
 
-        nav_container.waypoint({
-            handler: function (direction) {
-                nav.toggleClass('sticky', direction === 'down');
-                if (direction == 'down'){
-                    nav_container.css({
-                        'height': nav.outerHeight()
-                    });
+            for (var i = 0; i < aArray.length; i++) {
+                var theID = aArray[i];
+                var divPos = $(theID).offset().top; // get the offset of the div from the top of page
+                var divHeight = $(theID).height(); // get the height of the div in question
+                if (windowPos >= divPos && windowPos < (divPos + divHeight)) {
+                    $("a[href='" + theID + "']").addClass("active");
+                } else {
+                    $("a[href='" + theID + "']").removeClass("active");
                 }
-                else {
-                    nav_container.css({
-                        'height': 'auto'
-                    });
+            }
+
+
+            if (windowPos + windowHeight == docHeight) {
+                if (!$("nav li:last-child a").hasClass("active")) {
+                    var navActiveCurrent = $(".nav-active").attr("href");
+                    $("a[href='" + navActiveCurrent + "']").removeClass("active").css('border-bottom', 'none');
+                    $("nav li:last-child a").addClass("active");
 
                 }
             }
         });
-
     });
+
 })(jQuery);

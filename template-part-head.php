@@ -18,7 +18,7 @@
     </header>
     <footer>
         <div class="nav-container">
-        <nav class="nav-grad">
+        <nav>
             <ul>
                 <li><a href="#first">O Zawodach</a>
                 </li>
