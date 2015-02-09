@@ -1,5 +1,3 @@
-<?php global $dm_settings; ?>
-
 <!-- First -->
 			<section id="first" class="main">
 				<header>
@@ -25,15 +23,6 @@
                                         <?php the_content(); ?>
                                     <?php endwhile; ?>
 
-								</section>
-							</div>
-							<div class="4u">
-								<section>
-									<span class="feature-icon"><span class="icon fa-file-o"></span></span>
-									<header>
-										<h3>Regulamin</h3>
-									</header>
-									<a href="<?php echo $dm_settings['link_do_regulaminu'] ?>" class="button">Pobierz</a>
 								</section>
 							</div>
 							<div class="4u">

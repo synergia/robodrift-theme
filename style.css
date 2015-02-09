@@ -849,7 +849,9 @@ nav {
     padding: 10px;
     color: rgba(255, 255, 255, 1);
 }
-#header nav a:hover, .active {
+
+#header nav a:hover,
+.active {
     border-bottom: 4px solid white;
     background: rgba(255, 255, 255, 0.05);
     margin-bottom: -4px;
@@ -884,8 +886,8 @@ nav {
 }
 
 .main > header h2,
-.industry h2,
-.sponsorowane {
+.nagrody h2,
+.org {
     font-size: 2.25em;
     font-weight: 100;
     margin-bottom: 0;
@@ -1003,21 +1005,15 @@ nav {
         margin-bottom: 2em;
     }
 }
-
-.sponsorowane {
-    padding-bottom: 1em;
-}
-
-#sponsorowane {
-    background-color: white;
+#organizatorzy {
+    border-bottom: 1px solid #E6E6E6;
 }
 
 .sponsorowane-container {
-    padding: 1em 0;
     position: relative;
     overflow: hidden;
     text-align: center;
-    background-color: white;
+    padding-bottom: 1em;
 }
 
 .wspolpraca {
@@ -1071,7 +1067,7 @@ form input[type="text"].ninja-forms-field {
 }
 /****** PRZEMYSŁ *******/
 
-.industry {
+.nagrody {
     background-color: #F8F8F8;
     border-top: 1px solid #E6E6E6;
     padding-top: 3em;
@@ -1079,17 +1075,18 @@ form input[type="text"].ninja-forms-field {
     border-bottom: 1px solid #E6E6E6;
 }
 
-.industry img {
+.nagrody img {
     margin-bottom: 2em;
     height: 150px;
     max-width: 100%;
     width: auto;
 }
 
-.industry h2 {
+.nagrody h2 {
     text-align: center;
     margin-bottom: 1em;
 }
+/* Zwiniątka */
 
 .caret {
     border: none;
@@ -1100,4 +1097,8 @@ form input[type="text"].ninja-forms-field {
 
 #category .container {
     max-height: 19em;
+}
+
+.org {
+    padding-top: 3em;
 }

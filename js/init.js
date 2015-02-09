@@ -212,7 +212,7 @@
 
     //Read more
     $(window).load(function () {
-        $('#pojazdy ol').readmore({
+        $('#regulamin ol').readmore({
             embedCSS: false,
             speed: 300,
             moreLink: '<a href="#" title="Rozwiń" class="caret"><span class="icon fa-caret-down"></span></a>',

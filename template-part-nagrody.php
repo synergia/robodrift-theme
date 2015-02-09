@@ -1,5 +1,5 @@
 <section id="nagrody" class="main">
-    <div class="industry">
+    <div class="nagrody">
         <div class="container">
                 <h2>Nagrody</h2>
             <div class="row">

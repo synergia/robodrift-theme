@@ -1,6 +1,7 @@
-<section id="sponsorowane" class="main">
-    <div class="container sponsorowane-container">
-        <h2 class="sponsorowane">Organizatorzy</h2>
+<section id="organizatorzy" class="main">
+    <div class="org">
+        <div class="container sponsorowane-container">
+        <h2>Organizatorzy</h2>
 <?php
     $args = array(
         'post_type' => 'sponsorowane ',
@@ -23,9 +24,10 @@
       echo 'Nic a nic';
     }
   ?>
-</div>
-<div class="container sponsorowane-container">
-<h2 class="sponsorowane">Współpraca</h2>
+        </div>
+        <div class="container sponsorowane-container">
+
+<h2>Współpraca</h2>
 <?php
     $args = array(
         'post_type' => 'sponsorowane ',
@@ -48,9 +50,10 @@
       echo 'Nic a nic';
     }
   ?>
-</div>
-<div class="container sponsorowane-container">
-<h2 class="sponsorowane">Sponsorzy</h2>
+        </div>
+        <div class="container sponsorowane-container">
+
+<h2>Sponsorzy</h2>
 <?php
     $args = array(
         'post_type' => 'sponsorowane ',
@@ -73,5 +76,6 @@
       echo 'Nic a nic';
     }
   ?>
-</div>
+        </div>
+    </div>
 </section>

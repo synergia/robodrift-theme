@@ -22,13 +22,13 @@
             <ul>
                 <li><a href="#first">O Zawodach</a>
                 </li>
-                <li><a href="#second">Reguły</a>
+                <li><a href="#second">Regulamin</a>
                 </li>
                 <li><a href="#nagrody">Nagrody</a>
                 </li>
-                <li><a href="/rejestracja">Rejestraja</a>
+                <li><a href="#organizatorzy">Organizatorzy</a>
                 </li>
-                <li><a href="#sponsorowane">Organizatorzy</a>
+                <li><a href="/rejestracja">Rejestracja</a>
                 </li>
             </ul>
         </nav>
