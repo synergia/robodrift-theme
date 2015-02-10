@@ -232,7 +232,7 @@
             speed: 300,
             moreLink: '<a href="#" title="Rozwiń" class="caret"><span class="icon fa-caret-down"></span></a>',
             lessLink: '<a href="#" title="Zwiń" class="caret"><span class="icon fa-caret-up"></a>',
-            blockCSS: 'display: block; width: 1200px;',
+            blockCSS: 'display: block;',
             beforeToggle: function (trigger, element, expanded) {
                 if (expanded) { // The "Close" link was clicked
                     $('html, body').animate({
