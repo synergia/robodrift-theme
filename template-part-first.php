@@ -12,34 +12,26 @@
 				<div class="content dark style1 featured" id="firstdet">
 					<div class="container">
 						<div class="row">
-							<div class="4u">
-								<section>
-									<span class="feature-icon"><span class="icon fa-calendar"></span></span>
-                                    <?php $recent=new WP_Query( "category_name=czas");
-                                          while($recent->have_posts()) : $recent->the_post();?>
-									<header>
-										<h3><?php the_title(); ?></h3>
-									</header>
-                                        <?php the_content(); ?>
-                                    <?php endwhile; ?>
+							<div class="8u">
+								<section id="cardId" class="flipcard h">
+                                    <div class="front">
+                                        <img src="http://robo-drift.pwr.wroc.pl/wp-content/uploads/2014/01/Robo-drift041.jpg"/>
+                                    </div>
+                                    <div class="back">
+                                            <?php echo do_shortcode('[vsgmap address="strefa kultury studenckiej, Wrocław" width="100%"]'); ?>
+                                    </div>
 
 								</section>
 							</div>
 							<div class="4u">
 								<section>
-									<span class="feature-icon"><span class="icon fa-map-marker"></span></span>
-									<?php $recent=new WP_Query( "category_name=miejsce");
-                                          while($recent->have_posts()) : $recent->the_post();?>
-									<header>
-										<h3><?php the_title(); ?></h3>
+                                    <header>
+										<h3>Gdzie i kiedy?</h3>
 									</header>
-                                        <?php the_content(); ?>
-                                    <?php endwhile; ?>
-                                    <a id="demo" class="button" href="#modal-content">Mapa</a>
-
-                                    <div id="modal-content" class="pop-up-display-content">
-                                        <?php echo do_shortcode('[vsgmap address="strefa kultury studenckiej, Wrocław" width="100%"]'); ?>
-                                    </div>
+                                    <p>16 maja 2015 roku o 12:00 na parkingu Strefy Kultury Studenckiej Politechniki Wrocławskiej</p>
+                                    <button class="button switch">Zobacz na mapie</button>
+									<header>
+									</header>
 								</section>
 							</div>
                             <div class="clear"></div>

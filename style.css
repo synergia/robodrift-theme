@@ -5,7 +5,7 @@ Author URI: http://vk.com.stsdc/
 Description: Motyw specjalnie przygotowany dla RoboDrift.
 Version: 0.6.2
 Text Domain: robodrift
-RoboDrift WordPress Theme, Copyright 2014 stsdc.
+RoboDrift WordPress Theme, Copyright 2014-2015 Stanisław Dac.
 */
 
 @charset 'UTF-8';
@@ -825,6 +825,7 @@ nav {
     -o-transition: background 1s ease-in, font 300ms linear;
     transition: background 1s ease-in, font 300ms linear;
     padding-bottom: 4px;
+    text-shadow: 0 0 3px #000000;
 }
 
 .sticky {
@@ -1099,6 +1100,53 @@ form input[type="text"].ninja-forms-field {
     max-height: 19em;
 }
 
+/* Organizatorzy */
+
 .org {
     padding-top: 3em;
+}
+
+/* Flipper */
+.flipcard {
+  position: relative;
+  height: 400px;
+  perspective: 500px;
+}
+/*
+.flipcard.v:hover .front, .flipcard.v.flip .front{
+  transform: rotateX(180deg);
+}
+.flipcard.v:hover .back, .flipcard.v.flip .back{
+  transform: rotateX(0deg);
+}
+*/
+.flipcard.v .back{
+  transform: rotateX(-180deg);
+}
+ .flipcard.h.flip .front{
+  transform: rotateY(180deg);
+}
+.flipcard.h.flip .back{
+  transform: rotateY(0deg);
+}
+.flipcard.h .back{
+  transform: rotateY(-180deg);
+}
+.front img {
+    width: 100%;
+    height: 400px;
+}
+.flipcard .front, .flipcard .back
+{
+  position:absolute;
+  width: 100%;
+  transition: all 0.5s ease-in;
+  color: white;
+  backface-visibility: hidden;
+}
+button {
+    padding: 0.85 3em;
+    font-size: inherit;
+    font-weight: 300;
+    font-family: inherit;
 }

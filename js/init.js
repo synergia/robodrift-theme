@@ -301,5 +301,13 @@
             }
         });
     });
-
+    $(document).ready(function () {
+        $('.switch').on('click', function(e) {
+      $('#cardId').toggleClass("flip"); //you can list several class names
+      e.preventDefault();
+    });
+    });
 })(jQuery);
+
+//Flipper
+
