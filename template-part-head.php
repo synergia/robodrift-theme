@@ -11,9 +11,7 @@
     </div>
 
 
-    <header data-center="bottom: 200px; opacity: 1"
-                data-top="bottom: 1400px; opacity: 0"
-                data-anchor-target="#header h1">
+    <header>
         <h1><?php bloginfo( 'name' ); ?></h1>
     </header>
     <footer>

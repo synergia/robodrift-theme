@@ -3,7 +3,7 @@ Theme Name: RoboDrift
 Author: stsdc
 Author URI: http://vk.com.stsdc/
 Description: Motyw specjalnie przygotowany dla RoboDrift.
-Version: 0.6.2
+Version: 0.7
 Text Domain: robodrift
 RoboDrift WordPress Theme, Copyright 2014-2015 Stanisław Dac.
 */
@@ -99,6 +99,7 @@ i {
 a {
     color: inherit;
     text-decoration: none;
+    outline: 0px;
 }
 
 a:hover {
@@ -906,6 +907,14 @@ nav {
 
 .main > .content > .container {}
 
+.container a {
+    border-bottom: 2px dotted #787878;
+}
+
+.container a:hover {
+    border-bottom: 2px dotted #a9a9a9;
+}
+
 .container ol {
     list-style: decimal inside;
     text-align: left;
@@ -988,7 +997,11 @@ nav {
     box-shadow: inset 0 0 0 1px #d6d6d6;
 }
 
-.no-border-bottom {
+a.no-border-bottom,
+a.no-border-bottom:hover,
+a.caret,
+a.caret:hover,
+a.single-link, a.single-link:hover{
     border-bottom: 0px solid transparent;
 }
 
@@ -1021,7 +1034,6 @@ nav {
         margin-bottom: 2em;
     }
 }
-
 
 @media (min-width: 1200px) {
     nav {
@@ -1112,8 +1124,7 @@ form input[type="text"].ninja-forms-field {
 }
 /* Zwiniątka */
 
-.caret {
-    border: none;
+a.caret {
     font-size: 3em;
     text-align: center;
     margin: 0 auto;
