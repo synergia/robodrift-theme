@@ -1001,7 +1001,8 @@ a.no-border-bottom,
 a.no-border-bottom:hover,
 a.caret,
 a.caret:hover,
-a.single-link, a.single-link:hover{
+a.single-link,
+a.single-link:hover {
     border-bottom: 0px solid transparent;
 }
 
@@ -1015,6 +1016,7 @@ a.single-link, a.single-link:hover{
     .wspolpraca img {
         height: auto;
         max-width: 200px;
+    }
 }
 
 @media (max-width: 960px) {
@@ -1030,10 +1032,10 @@ a.single-link, a.single-link:hover{
     nav {
         font-size: 1.55em;
     }
-        .wspolpraca img {
-    max-height: 100px;
-    width: auto;
-}
+    .wspolpraca img {
+        max-height: 100px;
+        width: auto;
+    }
 }
 
 @media (max-width: 1000px) {
