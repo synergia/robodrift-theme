@@ -3,7 +3,7 @@ Theme Name: RoboDrift
 Author: stsdc
 Author URI: http://vk.com.stsdc/
 Description: Motyw specjalnie przygotowany dla RoboDrift.
-Version: 0.7
+Version: 0.7.2
 Text Domain: robodrift
 RoboDrift WordPress Theme, Copyright 2014-2015 Stanisław Dac.
 */
@@ -838,6 +838,20 @@ nav {
     font-size: 1em;
 }
 
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
 #header nav ul {
     margin-bottom: 0;
 }
@@ -846,13 +860,13 @@ nav {
     display: inline;
 }
 
-#header nav a {
+#header ul a {
     display: inline-block;
     padding: 10px;
     color: rgba(255, 255, 255, 1);
 }
 
-#header nav a:hover,
+#header ul a:hover,
 .active {
     border-bottom: 4px solid white;
     background: rgba(255, 255, 255, 0.05);
@@ -1016,6 +1030,43 @@ a.single-link:hover {
     .wspolpraca img {
         height: auto;
         max-width: 200px;
+    }
+    nav ul {
+        display: none;
+        height: auto;
+    }
+    nav a#pull {
+        width: 100%;
+        position: relative;
+    }
+    nav a#pull:after {
+        content: "";
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+    }
+    #header ul a {
+        display: inline-block;
+        padding: 0px;
+        width: 100%;
+        color: rgba(255, 255, 255, 1);
+    }
+    #header ul a:hover,
+    .active {
+        border-bottom: 0px solid white;
+        background: rgba(255, 255, 255, 0.2);
+    }
+    .noshow {
+        display: none;
+    }
+}
+
+@media (min-width: 737px) {
+    nav a#pull {
+        display: none;
     }
 }
 

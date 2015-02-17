@@ -257,8 +257,10 @@
             var div_top = $('.nav-container').offset().top;
             if (window_top > div_top) {
                 $('nav').addClass('sticky');
+                $('a#pull').removeClass('noshow');
             } else {
                 $('nav').removeClass('sticky');
+                $('a#pull').addClass('noshow');
             }
         });
         /**
@@ -302,12 +304,28 @@
         });
     });
     $(document).ready(function () {
-        $('.switch').on('click', function(e) {
-      $('#cardId').toggleClass("flip"); //you can list several class names
-      e.preventDefault();
+        $('.switch').on('click', function (e) {
+            $('#cardId').toggleClass("flip"); //you can list several class names
+            e.preventDefault();
+        });
     });
+    //M E N U
+    $(function () {
+        var pull = $('#pull');
+        menu = $('nav ul');
+        menuHeight = menu.height();
+
+        $(pull).on('click', function (e) {
+            e.preventDefault();
+            menu.slideToggle();
+        });
+    });
+    $(window).resize(function () {
+        var w = $(window).width();
+        if (w > 320 && menu.is(':hidden')) {
+            menu.removeAttr('style');
+        }
     });
 })(jQuery);
 
 //Flipper
-
