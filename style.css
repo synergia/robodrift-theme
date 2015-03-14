@@ -1212,6 +1212,9 @@ a.caret {
 .flipcard.v .back {
     transform: rotateX(-180deg);
 }
+.flipcard a,.flipcard a:hover {
+    border-bottom: none;
+}
 
 .flipcard.h.flip .front {
     transform: rotateY(180deg);

@@ -327,5 +327,3 @@
         }
     });
 })(jQuery);
-
-//Flipper
