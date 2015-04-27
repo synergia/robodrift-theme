@@ -15,7 +15,7 @@
 							<div class="8u">
 								<section id="cardId" class="flipcard h">
                                     <div class="front">
-                                        <img src="http://robo-drift.pwr.wroc.pl/wp-content/uploads/2014/01/Robo-drift041.jpg"/>
+                                        <img src="<?php echo get_template_directory_uri(); ?>/img/sks.JPG" alt="Parking Strefy Kultury Studenckiej">
                                     </div>
                                     <div class="back">
                                         <a href="https://www.google.com/maps/place/hoena+wronskiego+12/"><img src="<?php echo get_template_directory_uri(); ?>/img/mapa.JPG" alt="Zobacz na Mapach Google"></a>

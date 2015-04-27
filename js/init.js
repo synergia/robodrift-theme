@@ -215,8 +215,8 @@
         $('#regulamin ol').readmore({
             embedCSS: false,
             speed: 300,
-            moreLink: '<a href="#" title="Rozwiń" class="caret"><span class="icon fa-caret-down"></span></a>',
-            lessLink: '<a href="#" title="Zwiń" class="caret"><span class="icon fa-caret-up"></a>',
+            moreLink: '<button class="button switch" title="Rozwiń">Rozwiń<br><span class="icon fa-caret-down"></span></button>',
+            lessLink: '<button class="button switch" title="Zwiń">Zwiń<br><span class="icon fa-caret-up"></span></button>',
             beforeToggle: function (trigger, element, expanded) {
                 if (expanded) { // The "Close" link was clicked
                     $('html, body').animate({
@@ -230,9 +230,9 @@
         $('#category .container').readmore({
             embedCSS: true,
             speed: 300,
-            moreLink: '<a href="#" title="Rozwiń" class="caret"><span class="icon fa-caret-down"></span></a>',
-            lessLink: '<a href="#" title="Zwiń" class="caret"><span class="icon fa-caret-up"></a>',
-            blockCSS: 'display: block;',
+            moreLink: '<button class="button switch" title="Rozwiń">Rozwiń<br><span class="icon fa-caret-down"?</span></button>',
+            lessLink: '<button class="button switch" title="Zwiń">Zwiń<br><span class="icon fa-caret-up"></span></button>',
+            blockCSS: 'display: block; margin: auto;',
             beforeToggle: function (trigger, element, expanded) {
                 if (expanded) { // The "Close" link was clicked
                     $('html, body').animate({
@@ -303,12 +303,14 @@
             }
         });
     });
+
     $(document).ready(function () {
         $('.switch').on('click', function (e) {
             $('#cardId').toggleClass("flip"); //you can list several class names
             e.preventDefault();
         });
     });
+
     //M E N U
     $(function () {
         var pull = $('#pull');
